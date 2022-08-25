@@ -1,0 +1,234 @@
+@font-face {
+  font-family: 'Avanir';
+  src: url(./assets/fonts/Avenir.ttc);
+}
+
+@font-face {
+  font-family: 'AvantBk';
+  src: url(./assets/fonts/ITCAvantGardePro-Bk.otf);
+}
+
+@font-face {
+  font-family: 'AvantBold';
+  src: url(./assets/fonts/ITCAvantGardePro-Bold.otf);
+}
+
+@font-face {
+  font-family: 'AvantDemi';
+  src: url(./assets/fonts/ITCAvantGardePro-Demi.otf);
+}
+
+@font-face {
+  font-family: 'AvantDm';
+  src: url(./assets/fonts/ITCAvantGardePro-Md.otf);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.content {
+  display: flex;
+}
+
+.bgimg img {
+  width: 750px;
+  height: 100vh;
+}
+
+.rightContent {
+  padding-left: 120px;
+}
+
+.rightContent .center h1 {
+  font-family: AvantBold;
+  line-height: 41px;
+  font-size: 31.25px;
+  color: #000000;
+  max-width: 494px;
+  margin-top: 96px;
+}
+
+.rightContent .center h2 {
+  font-family: Avanir;
+  font-size: 16px;
+  line-height: 160%;
+  color: #666666;
+  max-width: 432px;
+  margin-top: 12px;
+}
+
+.rightContent .center button {
+  cursor: pointer;
+  font-family: Avanir;
+  font-weight: 900;
+  font-size: 12.8px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 5px;
+  margin-top: 32px;
+}
+
+.rightContent button:active {
+  position: relative;
+  top: 2px;
+}
+
+.product {
+  margin-top: 74px;
+  max-width: 230px;
+  margin-right: 32px;
+}
+
+.product img {
+  width: 230px;
+  height: 310px;
+}
+
+.product .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product .bottom h2 {
+  font-family: Avanir;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.8px;
+  margin: 0;
+}
+
+.product h1 {
+  font-family: Avanir;
+  font-size: 12.8px;
+  line-height: 160%;
+  margin: 0px;
+  font-weight: 400;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  color: #000000;
+}
+
+.colorselect {
+  display: flex;
+}
+
+.circlecolor {
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.circlecolorActive {
+  border: 1px solid black
+}
+
+
+.main {
+  max-width: 1200px;
+}
+
+.items {
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.items:active {
+  cursor: grab;
+}
+
+.item {
+  display: inline-block;
+}
+
+@media screen and (min-width: 500px) {
+
+  .item {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  .item {
+    width: 25%;
+  }
+}
+
+
+
+
+@media screen and (min-width:1024px) {
+  .content {
+    flex-direction: row;
+  }
+
+}
+
+@media screen and (max-width:1024px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .bgimg img {
+    height: 100%;
+    width: 100%;
+  }
+  .rightContent {
+    padding-left: 24px;
+  }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px),
+screen and (min-device-width:768px) and (max-device-width:1023px) {}
+
+
+
+@media screen and (min-width:480px) and (max-width:767px),
+screen and (min-device-width:480px) and (max-device-width:767px) {}
+
+
+
+@media screen and (max-width:479px),
+screen and (max-device-width:479px) {
+
+  .rightContent .center h1 {
+    font-size: 20px;
+    line-height: 26px;
+    color: white;
+  }
+
+  .rightContent .center h2 {
+    display: none;
+  }
+
+  .rightContent .center button {
+    margin-top: 0;
+    border-bottom: 2px solid white;
+    color: white;
+  }
+  .product{
+    margin-top: 0;
+  }
+
+  .rightContent {
+    padding-left: 24px;
+    position: relative;
+    top: -280px;
+  }
+
+}
